@@ -1,9 +1,11 @@
 import "../styles/Cards.css"
 
-export default function Cards({ title }) {
+function Cards({ title, type_ }) {
     return (
-        <div>
+        <div className={type_}>
             <h1>{title}</h1>
         </div>
     )
 }
+
+export default Cards;

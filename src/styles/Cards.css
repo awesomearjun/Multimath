@@ -1,4 +1,19 @@
 div {
-    background-color: blueviolet;
     margin: auto;
+}
+
+.addition {
+    background-color: #FF0000;
+}
+
+.subtraction {
+    background-color: #0085FF;
+}
+
+.multiplication {
+    background-color: #FF7A00;
+}
+
+.division {
+    background-color: #8000FF;
 }
