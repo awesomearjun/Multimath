@@ -1,0 +1,22 @@
+.cards {
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "addition subtraction multiplication division";
+}
+
+.addition {
+    grid-area: addition;
+}
+
+.subtraction {
+    grid-area: subtraction;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.division {
+    grid-area: division;
+}
