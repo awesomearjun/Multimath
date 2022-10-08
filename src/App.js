@@ -1,18 +1,26 @@
-import Cards from "./components/Cards"
+import Home from "./pages/Home"
+import Addition from "./pages/Addition"
+import Subtraction from "./pages/Subtraction"
+import Division from "./pages/Division"
+import Multiplication from "./pages/Multiplication"
 import "./styles/App.css"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1>Chose your operation:</h1>
-      <div className="cards">
-        <Cards title="Addition" className="addition" type_="addition" />
-        <Cards title="Subtraction" className="subtraction" type_="subtraction" />
-        <Cards title="Multiplication" className="multiplication" type_="multiplication" />
-        <Cards title="Division" className="division" type_="division" />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/addition" element={<Addition />} />
+        <Route path="/subtraction" element={<Subtraction />} />
+        <Route path="/multiplication" element={<Multiplication />} />
+        <Route path="/division" element={<Division />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 
+
 export default App;
+
+
