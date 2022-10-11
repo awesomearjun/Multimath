@@ -1,11 +1,16 @@
 import Flashcards from "../components/Flashcards";
+import generateNumber from "../components/GenerateNumber"
+import LinkToHome from "../components/LinkToHome"
 
 function Addition() {
+    let numbers = [generateNumber(13), generateNumber(13)];
+
     return (
         <div>
-            <Flashcards title="Waz 9 pluz 10?" answer="21" />
+            <Flashcards title={`What's ${numbers[0]} + ${numbers[1]}`} answer={numbers[0] + numbers[1]} />
+            <LinkToHome />
         </div>
     )
 } 
 
-export default Addition
+export default Addition;

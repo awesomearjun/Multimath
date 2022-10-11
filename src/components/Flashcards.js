@@ -2,12 +2,24 @@ import { useRef } from "react"
 
 function Flashcards({title, answer}) {
   let answerBox = useRef('');
+  let incorrectCounter = 0;
 
   const handleClick = () => {
-    console.log(`answer typed: ${answerBox.current.value}`);
-
+    console.log(answerBox.current.value)
+    
     if (answerBox.current.value == answer) {
-      console.log("CORRECT MY GUY");
+      alert("Correct!")
+      window.location.reload();
+    } else {
+      if (incorrectCounter >= 5) {
+        alert(`Not quite, the answer is ${answer}. Nice work!`)
+      } else {
+        alert("Incorrect")
+        incorrectCounter += 1;
+        console.log(incorrectCounter)
+        answerBox.current.value = "";
+      }
+
     }
   }
 
