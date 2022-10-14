@@ -1,18 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background: linear-gradient(112.34deg, #00A3FF 0%, #FF00F5 100%);
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+html, body {
+    width: 100%;
 }
 
 #title {
-
-    font-family: 'Inter';
-
+    font-family: sans-serif;
+    text-align: center;
     color: #FFFFFF;
 }
 
 .cards {
-    display: grid;
-    margin: auto;
-    grid-template-areas: 
-    "addition subtraction multiplication division";
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
+.mobile {
+   display: none; 
+}
+
+@media screen and (max-width: 756px) {
+   .cards {
+    display: none;
+   } 
+   
+   .mobile {
+    display: block;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+   }
+}
+
+.cards div {
+    padding: 1rem;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 0.5rem;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+    text-overflow: ellipsis;
+}
+
+.cards div p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}

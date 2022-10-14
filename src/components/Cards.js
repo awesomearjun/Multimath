@@ -1,9 +1,10 @@
 import "../styles/Cards.css"
 
-function Cards({ title, type_ }) {
+function Cards({ title, type_, description }) {
     return (
         <div className={type_}>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
+            <p>{description}</p>
         </div>
     )
 }

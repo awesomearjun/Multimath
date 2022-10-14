@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import "../styles/Flashcards.css"
 
 function Flashcards({title, answer}) {
   let answerBox = useRef('');
