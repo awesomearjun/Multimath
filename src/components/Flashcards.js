@@ -8,7 +8,7 @@ function Flashcards({title, answer}) {
   const handleClick = () => {
     console.log(answerBox.current.value)
     
-    if (answerBox.current.value == answer) {
+    if (parseInt(answerBox.current.value) === answer) {
       alert("Correct!")
       window.location.reload();
     } else {
