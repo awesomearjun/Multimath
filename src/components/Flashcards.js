@@ -7,6 +7,10 @@ function Flashcards({title, answer}) {
 
   const handleClick = () => {
     console.log(answerBox.current.value)
+
+    if (answerBox.current.value === "") {
+      handleClick();
+    }
     
     if (parseInt(answerBox.current.value) === answer) {
       alert("Correct!")
