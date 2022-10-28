@@ -3,7 +3,7 @@ import generateNumber from "../components/GenerateNumber"
 import LinkToHome from "../components/LinkToHome"
 
 function Addition() {
-    let numbers = [generateNumber(100000), generateNumber(100000)];
+    let numbers = [generateNumber(1000), generateNumber(1000)];
 
     return (
         <div>
