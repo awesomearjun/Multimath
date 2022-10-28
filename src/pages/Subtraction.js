@@ -3,7 +3,7 @@ import generateNumber from "../components/GenerateNumber"
 import LinkToHome from "../components/LinkToHome"
 
 function Subtraction() {
-    let numbers = [generateNumber(100000), generateNumber(100000)];
+    let numbers = [generateNumber(1000), generateNumber(1000)];
 
     if (numbers[0] < numbers[1]) {
         numbers[0] = 12;
