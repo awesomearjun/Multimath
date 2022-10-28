@@ -6,7 +6,7 @@ function Subtraction() {
     let numbers = [generateNumber(1000), generateNumber(1000)];
 
     if (numbers[0] < numbers[1]) {
-        numbers[0] = 12;
+        numbers[0] = numbers[1] + 100;
     }
 
     return (
